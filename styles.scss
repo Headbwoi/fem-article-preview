@@ -1,0 +1,206 @@
+/*
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 500, 700
+*/
+
+
+$Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+$Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+$Grayish-Blue: hsl(212, 23%, 69%);
+$Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: $Light-Grayish-Blue;
+    font-size: 13px;
+    padding: 4rem 1rem .5rem;
+}
+
+@media (min-width: 1000px) {
+    .hide-for-desktop{
+        display: none;
+        visibility: hidden;
+    }
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 28.8rem;
+    background: #fff;
+    border-radius: 1rem;
+
+    @media (min-width: 1000px) {
+        flex-direction: row;
+        max-width: 56.2rem;
+        max-height: 21.5rem;
+    }
+
+    .image{
+        width: 100%;
+        @media (min-width: 1000px){
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 100%;
+            border-radius: 1rem 1rem 0 0;
+            @media (min-width: 1000px) {
+                object-fit: contain;
+                border-radius: 1rem 0 0 1rem;
+            }
+        }
+    }
+
+    .text-box{
+        position: relative;
+        padding: 2.5rem 2rem 0rem;
+
+        @media (min-width: 768px) {
+            padding: 3rem 2.5rem .3rem;
+        }
+
+        .text-con{
+            line-height: 1.3;
+            h1{
+                color: $Very-Dark-Grayish-Blue;
+                font-size: 1.2rem;
+            }
+            p{
+                color: $Desaturated-Dark-Blue;
+                font-size: 1rem;
+            }
+        }
+
+        .text-info{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            height: 4.6rem;
+
+            .info-image{
+                width: 3rem;
+                margin-right: 1rem;
+                img{
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+            .info-name{
+                display: block;
+                width: 9rem;
+                font-size: .6rem;
+                h2{
+                    color: $Very-Dark-Grayish-Blue;
+                }
+                p{
+                    color: $Grayish-Blue;
+                    font-size: .8rem;
+                }
+            }
+            .info-btn{
+                display: block;
+                margin-left: auto;
+                img{
+                    background: $Light-Grayish-Blue;
+                    padding: .6rem;
+                    text-align: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+
+                    @media (min-width: 1000px) {
+                        &.active{
+                            background: $Desaturated-Dark-Blue;
+                            transition: .5s;
+                        }
+                    }
+                }
+            }
+        }
+        .icons-box{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            height: 4.6rem;
+            background: $Very-Dark-Grayish-Blue;
+            border-radius: 0 0 1rem 1rem;
+            opacity: 0;
+            transition: all .5s ease-in-out;
+            cursor: pointer;
+
+            @media (min-width: 1000px) {
+                top: 45%;
+                left: 86%;
+                width: 240px;
+                height: 3.85rem;
+                justify-content: space-between;
+                padding: 0 1.5rem;
+                border-radius: 1rem;
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: -20%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transform: rotate(45deg);
+                    width: 2rem;
+                    height: 2rem;
+                    background: $Very-Dark-Grayish-Blue;
+                    z-index: -1;
+                }
+
+                .icons{
+                    display: flex;
+                }
+            }
+
+            &.active{
+                opacity: 1;
+            }
+
+            span{
+                color: $Grayish-Blue;
+                font-size: 1rem;
+                letter-spacing: 3px;
+                padding-left: 2rem;
+                margin-right: 1.4rem;
+                text-transform: uppercase;
+            }
+            .icons{
+                img{
+                    &:not(:last-child){
+                        margin-right: .7rem;
+                    }
+                }
+            }
+            .icon-btn{
+                display: block;
+                margin-left: auto;
+                img{
+                    
+                    margin-right: 2rem;
+                    background: $Desaturated-Dark-Blue;
+                    padding: .6rem;
+                    text-align: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    margin-top: 3rem;
+}

@@ -1,0 +1,154 @@
+/*
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 500, 700
+*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #ecf2f8;
+  font-size: 13px;
+  padding: 4rem 1rem .5rem; }
+
+@media (min-width: 1000px) {
+  .hide-for-desktop {
+    display: none;
+    visibility: hidden; } }
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 28.8rem;
+  background: #fff;
+  border-radius: 1rem; }
+  @media (min-width: 1000px) {
+    main {
+      flex-direction: row;
+      max-width: 56.2rem;
+      max-height: 21.5rem; } }
+  main .image {
+    width: 100%; }
+    @media (min-width: 1000px) {
+      main .image {
+        padding: 0;
+        margin: 0; } }
+    main .image img {
+      width: 100%;
+      border-radius: 1rem 1rem 0 0; }
+      @media (min-width: 1000px) {
+        main .image img {
+          object-fit: contain;
+          border-radius: 1rem 0 0 1rem; } }
+  main .text-box {
+    position: relative;
+    padding: 2.5rem 2rem 0rem; }
+    @media (min-width: 768px) {
+      main .text-box {
+        padding: 3rem 2.5rem .3rem; } }
+    main .text-box .text-con {
+      line-height: 1.3; }
+      main .text-box .text-con h1 {
+        color: #48556a;
+        font-size: 1.2rem; }
+      main .text-box .text-con p {
+        color: #6d7f97;
+        font-size: 1rem; }
+    main .text-box .text-info {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      height: 4.6rem; }
+      main .text-box .text-info .info-image {
+        width: 3rem;
+        margin-right: 1rem; }
+        main .text-box .text-info .info-image img {
+          width: 100%;
+          border-radius: 50%; }
+      main .text-box .text-info .info-name {
+        display: block;
+        width: 9rem;
+        font-size: .6rem; }
+        main .text-box .text-info .info-name h2 {
+          color: #48556a; }
+        main .text-box .text-info .info-name p {
+          color: #9eafc2;
+          font-size: .8rem; }
+      main .text-box .text-info .info-btn {
+        display: block;
+        margin-left: auto; }
+        main .text-box .text-info .info-btn img {
+          background: #ecf2f8;
+          padding: .6rem;
+          text-align: center;
+          border-radius: 50%;
+          cursor: pointer; }
+          @media (min-width: 1000px) {
+            main .text-box .text-info .info-btn img.active {
+              background: #6d7f97;
+              transition: .5s; } }
+    main .text-box .icons-box {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      height: 4.6rem;
+      background: #48556a;
+      border-radius: 0 0 1rem 1rem;
+      opacity: 0;
+      transition: all .5s ease-in-out;
+      cursor: pointer; }
+      @media (min-width: 1000px) {
+        main .text-box .icons-box {
+          top: 45%;
+          left: 86%;
+          width: 240px;
+          height: 3.85rem;
+          justify-content: space-between;
+          padding: 0 1.5rem;
+          border-radius: 1rem; }
+          main .text-box .icons-box::after {
+            content: "";
+            position: absolute;
+            bottom: -20%;
+            left: 50%;
+            transform: translateX(-50%);
+            transform: rotate(45deg);
+            width: 2rem;
+            height: 2rem;
+            background: #48556a;
+            z-index: -1; }
+          main .text-box .icons-box .icons {
+            display: flex; } }
+      main .text-box .icons-box.active {
+        opacity: 1; }
+      main .text-box .icons-box span {
+        color: #9eafc2;
+        font-size: 1rem;
+        letter-spacing: 3px;
+        padding-left: 2rem;
+        margin-right: 1.4rem;
+        text-transform: uppercase; }
+      main .text-box .icons-box .icons img:not(:last-child) {
+        margin-right: .7rem; }
+      main .text-box .icons-box .icon-btn {
+        display: block;
+        margin-left: auto; }
+        main .text-box .icons-box .icon-btn img {
+          margin-right: 2rem;
+          background: #6d7f97;
+          padding: .6rem;
+          text-align: center;
+          border-radius: 50%;
+          cursor: pointer; }
+
+footer {
+  margin-top: 3rem; }
+
+/*# sourceMappingURL=styles.css.map */

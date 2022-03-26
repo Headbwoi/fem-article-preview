@@ -2,6 +2,8 @@
 - Family: [Manrope](https://fonts.google.com/specimen/Manrope)
 - Weights: 500, 700
 */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
 body {
   display: flex;
   justify-content: center;
@@ -9,6 +11,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background: #ecf2f8;
+  font-family: 'Manrope', sans-serif;
   font-size: 13px;
   padding: 4rem 1rem .5rem; }
 
@@ -52,10 +55,12 @@ main {
       line-height: 1.3; }
       main .text-box .text-con h1 {
         color: #48556a;
-        font-size: 1.2rem; }
+        font-size: 1.2rem;
+        font-weight: 700;}
       main .text-box .text-con p {
         color: #6d7f97;
-        font-size: 1rem; }
+        font-size: 1rem;
+        font-weight: 500;}
     main .text-box .text-info {
       display: flex;
       justify-content: start;
@@ -72,9 +77,11 @@ main {
         width: 9rem;
         font-size: .6rem; }
         main .text-box .text-info .info-name h2 {
+          font-weight: 700;
           color: #48556a; }
         main .text-box .text-info .info-name p {
           color: #9eafc2;
+          font-weight: 500;
           font-size: .8rem; }
       main .text-box .text-info .info-btn {
         display: block;

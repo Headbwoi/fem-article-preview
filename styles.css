@@ -79,14 +79,16 @@ main {
       main .text-box .text-info .info-btn {
         display: block;
         margin-left: auto; }
-        main .text-box .text-info .info-btn img {
+        main .text-box .text-info .info-btn i {
+          color: #6d7f97;
           background: #ecf2f8;
           padding: .6rem;
           text-align: center;
           border-radius: 50%;
           cursor: pointer; }
           @media (min-width: 1000px) {
-            main .text-box .text-info .info-btn img.active {
+            main .text-box .text-info .info-btn i.active {
+              color: #fff;
               background: #6d7f97;
               transition: .5s; } }
     main .text-box .icons-box {

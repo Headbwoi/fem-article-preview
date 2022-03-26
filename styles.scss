@@ -106,7 +106,8 @@ main{
             .info-btn{
                 display: block;
                 margin-left: auto;
-                img{
+                i{
+                    color: $Desaturated-Dark-Blue;
                     background: $Light-Grayish-Blue;
                     padding: .6rem;
                     text-align: center;
@@ -115,6 +116,7 @@ main{
 
                     @media (min-width: 1000px) {
                         &.active{
+                            color: #fff;
                             background: $Desaturated-Dark-Blue;
                             transition: .5s;
                         }

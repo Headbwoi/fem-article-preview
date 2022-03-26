@@ -106,19 +106,22 @@ main{
             .info-btn{
                 display: block;
                 margin-left: auto;
-                i{
-                    color: $Desaturated-Dark-Blue;
-                    background: $Light-Grayish-Blue;
-                    padding: .6rem;
-                    text-align: center;
-                    border-radius: 50%;
-                    cursor: pointer;
-
-                    @media (min-width: 1000px) {
-                        &.active{
-                            color: #fff;
-                            background: $Desaturated-Dark-Blue;
-                            transition: .5s;
+                span{
+                    background-color: $Desaturated-Dark-Blue;
+                    i{
+                        color: $Desaturated-Dark-Blue;
+                        background: $Light-Grayish-Blue;
+                        padding: .6rem;
+                        text-align: center;
+                        border-radius: 50%;
+                        cursor: pointer;
+    
+                        @media (min-width: 1000px) {
+                            &.active{
+                                color: #fff;
+                                background: $Desaturated-Dark-Blue;
+                                transition: .5s;
+                            }
                         }
                     }
                 }
